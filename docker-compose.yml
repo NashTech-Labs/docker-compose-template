@@ -1,0 +1,20 @@
+version: "<version>"
+services:
+   <service-name-1>:
+      image: <Image-name>
+      container_name: <desired-container-name>
+      environment:
+         <env-var>: <env value>
+      build:
+         context: ./
+      ports:
+         - "<host-machine-port>:<container-port>"
+   <service-name-2:
+      image: <Image-name>
+      container_name: <desired-container-name>
+      environment:
+         <env-var>: <env value>
+      ports:
+         - "<host-machine-port>:<container-port>"
+      build:
+         context: <build-context-of-respective-image>
